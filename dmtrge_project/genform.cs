@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace dmtrge_project
 {
-    public partial class Form1 : Form
+    public partial class genform : Form
     {
-        public Form1()
+        public genform()
         {
             InitializeComponent();
+        }
+
+        private void переавтризацияToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
