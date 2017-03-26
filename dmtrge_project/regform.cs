@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace dmtrge_project
 {
-    public partial class auth : Form
+    public partial class regform : Form
     {
-        public auth()
+        public regform()
         {
             InitializeComponent();
-        }
-
-        private void exitbtn_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
         }
     }
 }

@@ -34,6 +34,7 @@
             this.passwd = new System.Windows.Forms.Label();
             this.regbutton = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.exitbtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Login
@@ -47,6 +48,7 @@
             // 
             // logintbox
             // 
+            this.logintbox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.logintbox.Location = new System.Drawing.Point(81, 36);
             this.logintbox.Name = "logintbox";
             this.logintbox.Size = new System.Drawing.Size(100, 20);
@@ -58,6 +60,7 @@
             this.passwdbox.Name = "passwdbox";
             this.passwdbox.Size = new System.Drawing.Size(100, 20);
             this.passwdbox.TabIndex = 2;
+            this.passwdbox.UseSystemPasswordChar = true;
             // 
             // passwd
             // 
@@ -86,12 +89,23 @@
             this.button1.Text = "Авторизация";
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // exitbtn
+            // 
+            this.exitbtn.Location = new System.Drawing.Point(90, 134);
+            this.exitbtn.Name = "exitbtn";
+            this.exitbtn.Size = new System.Drawing.Size(75, 23);
+            this.exitbtn.TabIndex = 6;
+            this.exitbtn.Text = "Выйти";
+            this.exitbtn.UseVisualStyleBackColor = true;
+            this.exitbtn.Click += new System.EventHandler(this.exitbtn_Click);
+            // 
             // auth
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(261, 160);
+            this.Controls.Add(this.exitbtn);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.regbutton);
             this.Controls.Add(this.passwd);
@@ -115,5 +129,6 @@
         private System.Windows.Forms.Label passwd;
         private System.Windows.Forms.Button regbutton;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button exitbtn;
     }
 }
