@@ -21,5 +21,17 @@ namespace dmtrge_project
         {
             Application.Exit();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string authX = logintbox.Text();
+            string passwdX = passwdbox.Text();
+        }
+
+        private void regbutton_Click(object sender, EventArgs e)
+        {
+            regform = new regform();
+            
+        }
     }
 }

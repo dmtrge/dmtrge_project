@@ -79,6 +79,7 @@
             this.regbutton.TabIndex = 4;
             this.regbutton.Text = "Регистрация";
             this.regbutton.UseVisualStyleBackColor = true;
+            this.regbutton.Click += new System.EventHandler(this.regbutton_Click);
             // 
             // button1
             // 
@@ -88,6 +89,7 @@
             this.button1.TabIndex = 5;
             this.button1.Text = "Авторизация";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // exitbtn
             // 

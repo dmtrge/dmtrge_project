@@ -16,5 +16,20 @@ namespace dmtrge_project
         {
             InitializeComponent();
         }
+
+        private void cancelBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void addvacBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

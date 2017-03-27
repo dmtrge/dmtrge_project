@@ -41,9 +41,6 @@
             this.salRB = new System.Windows.Forms.RadioButton();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.gentableBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.databaseDataSet = new dmtrge_project.DatabaseDataSet();
-            this.gentableTableAdapter = new dmtrge_project.DatabaseDataSetTableAdapters.gentableTableAdapter();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.отрасльDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.специальностьDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -54,7 +51,11 @@
             this.местоположениеDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.обратнаяСвязьDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.колвоПросмотровDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gentableBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.databaseDataSet = new dmtrge_project.DatabaseDataSet();
+            this.gentableTableAdapter = new dmtrge_project.DatabaseDataSetTableAdapters.gentableTableAdapter();
             this.searchbtn = new System.Windows.Forms.Button();
+            this.добавитьВакансиюToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -83,7 +84,8 @@
             // файлToolStripMenuItem
             // 
             this.файлToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.переавтризацияToolStripMenuItem});
+            this.переавтризацияToolStripMenuItem,
+            this.добавитьВакансиюToolStripMenuItem});
             this.файлToolStripMenuItem.Name = "файлToolStripMenuItem";
             this.файлToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
             this.файлToolStripMenuItem.Text = "Файл";
@@ -91,7 +93,7 @@
             // переавтризацияToolStripMenuItem
             // 
             this.переавтризацияToolStripMenuItem.Name = "переавтризацияToolStripMenuItem";
-            this.переавтризацияToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.переавтризацияToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
             this.переавтризацияToolStripMenuItem.Text = "Переавторизация";
             this.переавтризацияToolStripMenuItem.Click += new System.EventHandler(this.переавтризацияToolStripMenuItem_Click);
             // 
@@ -160,7 +162,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(567, 96);
+            this.textBox2.Location = new System.Drawing.Point(547, 109);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(572, 335);
@@ -187,20 +189,6 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(444, 584);
             this.dataGridView1.TabIndex = 4;
-            // 
-            // gentableBindingSource
-            // 
-            this.gentableBindingSource.DataMember = "gentable";
-            this.gentableBindingSource.DataSource = this.databaseDataSet;
-            // 
-            // databaseDataSet
-            // 
-            this.databaseDataSet.DataSetName = "DatabaseDataSet";
-            this.databaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // gentableTableAdapter
-            // 
-            this.gentableTableAdapter.ClearBeforeFill = true;
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -269,6 +257,20 @@
             this.колвоПросмотровDataGridViewTextBoxColumn.Name = "колвоПросмотровDataGridViewTextBoxColumn";
             this.колвоПросмотровDataGridViewTextBoxColumn.Visible = false;
             // 
+            // gentableBindingSource
+            // 
+            this.gentableBindingSource.DataMember = "gentable";
+            this.gentableBindingSource.DataSource = this.databaseDataSet;
+            // 
+            // databaseDataSet
+            // 
+            this.databaseDataSet.DataSetName = "DatabaseDataSet";
+            this.databaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // gentableTableAdapter
+            // 
+            this.gentableTableAdapter.ClearBeforeFill = true;
+            // 
             // searchbtn
             // 
             this.searchbtn.Location = new System.Drawing.Point(885, 44);
@@ -277,6 +279,12 @@
             this.searchbtn.TabIndex = 5;
             this.searchbtn.Text = "Поиск";
             this.searchbtn.UseVisualStyleBackColor = true;
+            // 
+            // добавитьВакансиюToolStripMenuItem
+            // 
+            this.добавитьВакансиюToolStripMenuItem.Name = "добавитьВакансиюToolStripMenuItem";
+            this.добавитьВакансиюToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
+            this.добавитьВакансиюToolStripMenuItem.Text = "Добавить вакансию";
             // 
             // genform
             // 
@@ -334,6 +342,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn обратнаяСвязьDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn колвоПросмотровDataGridViewTextBoxColumn;
         private System.Windows.Forms.Button searchbtn;
+        private System.Windows.Forms.ToolStripMenuItem добавитьВакансиюToolStripMenuItem;
     }
 }
 
